@@ -1,0 +1,133 @@
+/* Estilo geral */
+
+html {
+  font-size: 16px;
+  font-family: Consolas, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: #f5f5f5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-indent: 2em;
+}
+
+a {
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+/* Estilo do cabeçalho */
+
+header {
+  background-color: #212121;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+/* Estilo da seção "Sobre mim" */
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.about-me {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Estilo da seção "Educação" e "Experiência" */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Ocultar todas as seções, exceto a seção "Sobre mim" */
+
+main section:not(#sobre-mim) {
+  display: none;
+}
+
+/* Estilo dos botões */
+
+.btn {
+  display: inline-block;
+  background-color: #8c8c8c;
+  color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #616161;
+}
+
+b {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+hr.topo{
+	width: 80%;
+}
+
+.download-links {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 30px;
+}
+
+.download-links a {
+  display: inline-block;
+  background-color: #333333;
+  color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}

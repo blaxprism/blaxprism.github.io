@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Currículo - Fabrício</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <hr class="topo" />
+    <header>
+      <nav>
+        <a href="#sobre-mim">Sobre mim</a>
+        <a href="#educacao">Educação</a>
+        <a href="#contato">Contato</a>
+        <a href="#curriculo">Currículo</a>
+      </nav>
+    </header>
+    <hr class="topo" />
+    <main>
+      <section id="sobre-mim" class="container">
+        <hr/>
+        <h2>Sobre mim</h2>
+        <hr/>
+        <div class="content">
+          <img src="imgs/foto.png" alt="Foto de perfil" class="profile-picture">
+          <p class="about-me">Olá, meu nome é Fabrício José, sou estudante de Gestão de TI na FATEC Franco da Rocha. Atualmente, busco meu primeiro emprego na área de tecnologia da informação e estou animado para aprender e desenvolver minhas habilidades. Possuo conhecimentos básicos de programação web, incluindo HTML, CSS, PHP, SQL e Python, além de ter habilidades em manutenção de computadores e conhecimento em sistemas operacionais Windows e Linux. Acredito que posso contribuir de forma positiva em equipes e estou sempre disposto a me adaptar a diferentes ambientes e desafios. Se precisar de mais informações, fique à vontade para entrar em contato comigo.</p>
+        </div>
+        <hr/>
+      </section>
+
+      <section id="educacao" class="container">
+        <hr/>
+        <h2>Educação</h2>
+        <hr/>
+        <ul>
+          <li>2023 - 2025 | Gestão de Tecnologia da Informação</li>
+          <b>Fatec Franco da Rocha</b>
+          <hr/>
+          <li>2020 - 2022 | Técnico em informática para internet</li>
+          <b>Etec de Francisco Morato</b>
+          <hr/>
+        </ul>
+      </section>
+
+      <section id="contato" class="container">
+        <hr/>
+        <h2>Contato</h2>
+        <hr/>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/fabrício-josé-brito-839875223/">
+              <img src="imgs/linkedin.png" height="75" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/blaxprism">
+              <img src="imgs/github.png" height="75" style="border-radius: 10px;" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:fabricio.jose426@gmail.com">
+              <img src="imgs/mail.png" height="75" />
+            </a>
+          </li>
+        </ul>
+        <hr/>
+      </section>
+
+      <section id="curriculo" class="container">
+        <hr/>
+        <h2>Download do Currículo</h2>
+        <hr/>
+        <div class="download-links">
+          <a href="imgs/curriculo.pdf" download>Download em PDF</a>
+          <a href="imgs/curriculo.pdf" download>Download em PNG</a>
+        </div>
+        <hr/>
+      </section>
+    </main>
+
+    <script>
+      const links = document.querySelectorAll('nav a');
+
+      links.forEach(link => {
+        link.addEventListener('click', event => {
+          event.preventDefault();
+
+          const sectionId = link.getAttribute('href');
+          const section = document.querySelector(sectionId);
+          const sections = document.querySelectorAll('main section');
+
+          sections.forEach(section => {
+            section.style.display = 'none';
+          });
+
+          section.style.display = 'block';
+        });
+      });
+    </script>
+  </body>
+</html>
