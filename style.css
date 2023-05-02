@@ -169,10 +169,16 @@ main section:not(#sobre-mim) {
 	h1{
 	  display: none;
 	}
-	
+	.profile-picture{
+		margin-right: 0;
+	}
+
 	.container{
 		width: 100%;
 		padding: 0 0;
+	}
+	#sobre-mim{
+		text-align: center;
 	}
 }
 
