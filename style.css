@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -19,7 +19,7 @@ body {
 
 main {
   background-color: #212121;
-  border: 1px solid #2fe8f6;
+  border: 5px solid #2fe8f6;
   border-top-style: hidden;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ a:hover {
 /* Estilo do cabeçalho */
 header {
   background-color: #212121;
-  border: 1px solid #2fe8f6;
+  border: 5px solid #2fe8f6;
   padding: 1rem;
   width: 80vw;
   border-top-right-radius: 10px;
@@ -134,14 +134,13 @@ main section:not(#sobre-mim) {
 
 @media screen and (max-width: 768px) {
   body {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url("https://preview.redd.it/1iwcit1gidyy.jpg?auto=webp&s=2e7883b8b95e0d5ed00e66d862992b618b8a3796") no-repeat center center fixed;
     background-size: cover;
-    padding: 20%;
+    transform: scale(0.92);
   }
 
   nav {
@@ -151,8 +150,29 @@ main section:not(#sobre-mim) {
 	nav a {
 	margin: 10px;
 	}
+
+	header{
+		width: 90vw;
+		margin: 0 auto;
+
+	}
+
 	main{
-		font-size: 12px;
+		min-height: 100vw;
+		width: 90vw;
+		margin: 0 auto;
+	}
+	.content{
+		display: inline;
+	}
+	/* Ocultar os títulos no mobile*/
+	h1{
+	  display: none;
+	}
+	
+	.container{
+		width: 100%;
+		padding: 0 0;
 	}
 }
 
