@@ -128,29 +128,19 @@ main section:not(#sobre-mim) {
   display: none;
 }
 
-@media screen and (max-width: 768px) { 
-	html,body {
-	  height: 100%;
-	  margin: 0;
-	}
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://preview.redd.it/1iwcit1gidyy.jpg?auto=webp&s=2e7883b8b95e0d5ed00e66d862992b618b8a3796") no-repeat center center fixed;
+    background-size: cover;
+    padding: 20%;
+  }
 
-	.container {
-	  display: flex;
-	  flex-direction: column;
-	  min-height: 100%;
-	}
-
-	.main-content {
-	  flex: 1;
-	}
-
-	body {
-	  background-size: auto;
-	  margin: 0;
-	  margin-top: 60px; /* ou o valor desejado */
-	}
-
-	nav {
+  nav {
 	flex-wrap: wrap;
 	}
 
@@ -159,71 +149,10 @@ main section:not(#sobre-mim) {
 	}
 
 	main {
-	min-height: 80vh;
-	}
-
-	.container{
-		padding: 1px;
-	}
-	h2{
-		margin: 0;
-	}
-
-	/* Estilo da seção "Sobre mim" */
-	.profile-picture {
-	width: 75%;
-	height: auto;
-	margin: 1rem 0;
-	}
-
-	.content {
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	}
-
-	.about-me {
-	font-size: 1.2rem;
-	margin: 1rem 0;
-	}
-
-	/* Estilo da seção "Educação" */
-	ul {
-	margin: 1rem 0;
-	}
-
-	li {
-	font-size: 1.2rem;
-	margin: 0.5rem 0;
-	}
-
-	b {
-	font-size: 1.2rem;
-	margin: 0.5rem 0;
-	}
-
-	.download-links {
-	align-items: center;
-	margin: 1rem 0;
-	}
-
-	.download-links a {
-	font-size: 1.2rem;
-	margin: 0.5rem 0;
-	}
-
-	/* Estilo geral */
-	.container {
-	width: 80%;
-	}
-
-	h1, h2 {
-	font-size: 2rem;
-	margin: 1rem 0;
-	}
-
-	a {
-	font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 	}
 
 }
+
