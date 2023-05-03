@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  background-image: url("https://preview.redd.it/1iwcit1gidyy.jpg?auto=webp&s=2e7883b8b95e0d5ed00e66d862992b618b8a3796");
+  background-image: url("imgs/fundo.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -19,7 +19,7 @@ body {
 
 main {
   background-color: #212121;
-  border: 5px solid #2fe8f6;
+  border: 5px solid #00bcea;
   border-top-style: hidden;
   display: flex;
   flex-direction: column;
@@ -33,14 +33,13 @@ main {
 
 /* Estilo geral */
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding: 50px 0;
 }
 
 h1, h2 {
   font-weight: bold;
-  text-indent: 2em;
+  text-decoration: underline;
 }
 
 a {
@@ -55,7 +54,7 @@ a:hover {
 /* Estilo do cabeçalho */
 header {
   background-color: #212121;
-  border: 5px solid #2fe8f6;
+  border: 5px solid #00bcea;
   padding: 1rem;
   width: 80vw;
   border-top-right-radius: 10px;
@@ -114,7 +113,6 @@ b {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-top: 30px;
 }
 
 .download-links a {
@@ -133,12 +131,15 @@ main section:not(#sobre-mim) {
 }
 
 @media screen and (max-width: 768px) {
+	html,body{
+		min-height: 100vh;
+	}
   body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("https://preview.redd.it/1iwcit1gidyy.jpg?auto=webp&s=2e7883b8b95e0d5ed00e66d862992b618b8a3796") no-repeat center center fixed;
+    background: url("imgs/fundo-mobile.png") no-repeat center center;
     background-size: cover;
     transform: scale(0.92);
   }
@@ -162,13 +163,11 @@ main section:not(#sobre-mim) {
 		width: 90vw;
 		margin: 0 auto;
 	}
+
 	.content{
 		display: inline;
 	}
-	/* Ocultar os títulos no mobile*/
-	h1{
-	  display: none;
-	}
+
 	.profile-picture{
 		margin-right: 0;
 	}

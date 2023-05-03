@@ -8,13 +8,16 @@
 		<!-- Define o título da página e o link para o arquivo de estilo -->
 		<title>Currículo</title>
 		<link rel="stylesheet" href="style.css">
+		<!--Define o icone da página-->
+		<link rel="icon" href="imgs/icon.png" type="image/x-icon">
 	</head>
 	<body>
 		<!-- Define o cabeçalho do site, incluindo a navegação -->
 		<header>
 			<nav>
 				<a href="#sobre-mim">Sobre mim</a>
-				<a href="#educacao">Educação</a>
+				<a href="#formado">Formação</a>
+				<a href="#cursos">Cursos</a>
 				<a href="#contato">Contato</a>
 				<a href="#curriculo">Currículo</a>
 			</nav>
@@ -31,71 +34,93 @@
 				</div>
 			</section>
 
-			<!-- Define a seção "Educação" -->
-			<section id="educacao" class="container">
-			  <h1>Educação</h1>
-			  <div class="content">
-			    <ul>
-			      <li>2023 - 2025 | Gestão de Tecnologia da Informação</li>
-			      <b>Fatec Franco da Rocha</b>
-			      <li>2020 - 2022 | Técnico em informática para internet</li>
-			      <b>Etec de Francisco Morato</b>
-			    </ul>
-			  </div>
+			<!-- Define a seção "formação" -->
+			<section id="formado" class="container">
+				<h1>Formação</h1>
+				<div class="content">
+					<ul>
+						<b>Fatec Franco da Rocha</b>
+						<li>2023 - 2025 | Gestão de Tecnologia da Informação</li>
+						<b>Etec de Francisco Morato</b>
+						<li>2020 - 2022 | Técnico em informática para internet</li>
+					</ul>
+				</div>
 			</section>
 
+			<!--Define a seção "cursos"-->
+			<section id="cursos" class="container">
+				<h1>Cursos Complementares</h1>
+				<div class="content">
+					<ul>
+						<b>Fundação Bradesco</b>
+						<li>2023 | Admnistrando Banco de dados</li>
+						<li>2023 | Introdução a Programação Orientada a objetos</li>
+						<li>2022 | Fundamentos da Lógica de Programação</li>
+						<li>2022 | HTML - Avançado</li>
+						<li>2022 | Microsoft Excel 2016 - Básico</li>
+						<li>2022 | HTML - Básico</li>
+						<li>2022 | Crie um site simples usando HTML, CSS e JavaScript</li>
+						<li>2022 | Lei Geral de Proteção de Dados - LGPD</li>
+					</ul>
+				</div>
+			</section>
 
 			<!-- Define a seção "Contato" -->
 			<section id="contato" class="container">
-			  <h1>Contato</h1>
-			  <ul>
-			    <li>
-			      <a href="https://www.linkedin.com/in/fabricio-jose-brito-839875223/">
-			        <img src="imgs/linkedin.png" height="75" alt="link para meu linkedin em forma de imagem" />
-			      </a>
-			    </li>
-			    <li>
-			      <a href="https://github.com/blaxprism">
-			        <img src="imgs/github.png" height="75" alt="link para meu github em forma de imagem"/>
-			      </a>
-			    </li>
-			    <li>
-			      <a href="mailto:fabricio.jose426@gmail.com">
-			        <img src="imgs/mail.png" height="75" alt="link para meu e-mail em forma de imagem"/>
-			      </a>
-			    </li>
-			  </ul>
+				<h1>Contato</h1>
+				<ul>
+					<li>
+						<a href="https://www.linkedin.com/in/fabr%C3%ADcio-jos%C3%A9-brito-839875223/">
+							<img src="imgs/linkedin.png" height="75" alt="link para meu linkedin em forma de imagem" />
+							<blockquote>
+								
+							</blockquote>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/blaxprism">
+							<img src="imgs/github.png" height="75" alt="link para meu github em forma de imagem"/>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:fabricio.jose426@gmail.com">
+							<img src="imgs/mail.png" height="75" alt="link para meu e-mail em forma de imagem"/>
+						</a>
+					</li>
+				</ul>
 			</section>
 
+			<!-- Define a Seção "Curriculo"-->
 			<section id="curriculo" class="container">
-			  <h1>Download do Currículo</h1>
-			  <div class="content">
-			    <div class="download-links">
-			      <a href="imgs/curriculo.pdf" download target="_blank">Download em PDF</a>
-			      <a href="imgs/curriculo.png" download target="_blank">Download em PNG</a>
-			    </div>
-			  </div>
+				<h1>Download do Currículo</h1>
+				<div class="content">
+					<div class="download-links">
+						<a href="imgs/curriculo.pdf" download target="_blank">Download em PDF</a>
+						<a href="imgs/curriculo.png" download target="_blank">Download em PNG</a>
+					</div>
+				</div>
 			</section>
 		</main>
-		
-	    <script>
-	      const links = document.querySelectorAll('nav a');
 
-	      links.forEach(link => {
-	        link.addEventListener('click', event => {
-	          event.preventDefault();
+		<!-- Define o Js que faz os links trocarem as seções da página -->
+		<script>
+			const links = document.querySelectorAll('nav a');
 
-	          const sectionId = link.getAttribute('href');
-	          const section = document.querySelector(sectionId);
-	          const sections = document.querySelectorAll('main section');
+			links.forEach(link => {
+				link.addEventListener('click', event => {
+					event.preventDefault();
 
-	          sections.forEach(section => {
-	            section.style.display = 'none';
-	          });
+					const sectionId = link.getAttribute('href');
+					const section = document.querySelector(sectionId);
+					const sections = document.querySelectorAll('main section');
 
-	          section.style.display = 'block';
-	        });
-	      });
-	    </script>
+					sections.forEach(section => {
+						section.style.display = 'none';
+					});
+
+					section.style.display = 'block';
+				});
+			});
+		</script>
 	</body>
 </html>
