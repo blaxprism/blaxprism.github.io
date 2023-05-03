@@ -31,7 +31,6 @@ main {
   border-bottom-left-radius: 10px;
 }
 
-/* Estilo geral */
 .container {
   width: 90%;
   margin: 0 auto;
@@ -51,7 +50,6 @@ a:hover {
   font-weight: bold;
 }
 
-/* Estilo do cabeçalho */
 header {
   background-color: #212121;
   border: 5px solid #00bcea;
@@ -71,7 +69,6 @@ nav a {
   margin: 0 30px;
 }
 
-/* Estilo da seção "Sobre mim" */
 .profile-picture {
   width: 200px;
   height: 200px;
@@ -90,7 +87,6 @@ nav a {
   line-height: 1.5;
 }
 
-/* Estilo da seção "Educação" */
 ul {
   list-style: none;
   margin: 0;
@@ -125,7 +121,6 @@ b {
   margin-bottom: 10px;
 }
 
-/* Ocultar todas as seções, exceto a seção "Sobre mim" */
 main section:not(#sobre-mim) {
   display: none;
 }
