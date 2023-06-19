@@ -6,10 +6,10 @@ Criar um <a href="https://blaxprism.github.io">site</a> que funcione como um cur
 <h2>O site tem as páginas:</h2>
 
 * [Sobre mim (Resumo)](https://blaxprism.github.io)
-* [Minhas formações](https://blaxprism.github.io)
-* [Cursos Complementares](https://blaxprism.github.io)
-* [Informações para contato](https://blaxprism.github.io)
-* [Download do currículo](https://blaxprism.github.io)
+* [Minhas formações](https://blaxprism.github.io/#formado)
+* [Cursos Complementares](https://blaxprism.github.io/#cursos)
+* [Informações para contato](https://blaxprism.github.io/#contato)
+* [Download do currículo](https://blaxprism.github.io/#curriculo)
 
 <!--Adicionar um resumo sobre cada seção do site e colocar links no indice para cada resumo-->
 
